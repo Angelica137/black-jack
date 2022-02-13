@@ -4,7 +4,7 @@ def value_of_card(card: str) -> int:
     Cards Jack, Queen and K return 10
     Ace returns 1
     """
-    if card == 'K' or card == 'J':
+    if card == 'J' or card == 'Q' or card == 'K':
         return 10
     if card == 'A':
         return 1
