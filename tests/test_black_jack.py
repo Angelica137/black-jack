@@ -11,3 +11,7 @@ def test_value_of_card_returns_4():
 
 def test_value_of_card_returns_1():
     assert value_of_card('A') == 1
+
+
+def test_value_of_card_returns_10_for_J():
+    assert value_of_card('J') == 10
