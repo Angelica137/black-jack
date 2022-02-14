@@ -27,3 +27,7 @@ def test_higher_card_K_10():
 
 def test_higher_card_4_6():
     assert higher_card('4', '6') == '6'
+
+
+def test_higher_card_K_A():
+    assert higher_card('K', 'A') == 'K'
