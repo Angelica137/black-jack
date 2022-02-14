@@ -47,3 +47,9 @@ def is_blackjack(card_one: str, card_two: str) -> bool:
     if value_of_card(card_one) == 10 and card_two == 'A':
         return True
     return False
+
+
+def can_split_pairs(card_one: str, card_two: str) -> bool:
+    if value_of_card(card_one) == value_of_card(card_two):
+        return True
+    return False
