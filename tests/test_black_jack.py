@@ -31,3 +31,7 @@ def test_higher_card_4_6():
 
 def test_higher_card_K_A():
     assert higher_card('K', 'A') == 'K'
+
+
+def test_value_of_ace_6_K():
+    assert value_of_ace('6', 'K') == 1
