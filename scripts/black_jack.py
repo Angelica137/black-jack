@@ -9,3 +9,15 @@ def value_of_card(card: str) -> int:
     if card == 'A':
         return 1
     return int(card)
+
+
+def higher_card(card_one: str, card_two: str) -> str:
+    """
+    Returns the highest value card, if both are the same
+    value, both are returned
+    """
+    letters = ['J', 'Q', 'K', 'A']
+    if card_one in letters:
+        card_one_value = str(value_of_card(card_one))
+    if card_one_value == card_two:
+        return card_one, card_two
