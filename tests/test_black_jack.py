@@ -19,3 +19,7 @@ def test_value_of_card_returns_10_for_J():
 
 def test_vlue_of_card_returns_Q():
     assert value_of_card('Q') == 10
+
+
+def test_higher_card_returns_K_10():
+    assert higher_card('K', '10') == 'K', '10'
