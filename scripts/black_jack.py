@@ -42,3 +42,8 @@ def is_blackjack(card_one: str, card_two: str) -> bool:
     Returns True if params include A and a 10 value card, 
     False otherwise
     """
+    if card_one == 'A' and value_of_card(card_two) == 10:
+        return True
+    if value_of_card(card_one) == 10 and card_two == 'A':
+        return True
+    return False
