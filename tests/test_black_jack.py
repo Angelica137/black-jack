@@ -1,3 +1,4 @@
+from operator import is_
 from scripts.black_jack import *
 
 
@@ -43,3 +44,7 @@ def test_value_of_ace_7_3():
 
 def test_is_blackjack_A_K():
     assert is_blackjack('A', 'K') == True
+
+
+def test_is_black_jack_10_9():
+    assert is_blackjack('10', '9') == False
