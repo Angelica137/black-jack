@@ -39,3 +39,7 @@ def test_value_of_ace_6_K():
 
 def test_value_of_ace_7_3():
     assert value_of_ace('7', '3') == 11
+
+
+def test_is_blackjack_A_K():
+    assert is_blackjack('A', 'K') == True

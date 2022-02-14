@@ -35,3 +35,10 @@ def value_of_ace(card_one: str, card_two: str) -> int:
     if (card_one + card_two + 11) > 21:
         return 1
     return 11
+
+
+def is_blackjack(card_one: str, card_two: str) -> bool:
+    """
+    Returns True if params include A and a 10 value card, 
+    False otherwise
+    """
