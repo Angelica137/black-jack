@@ -30,3 +30,10 @@ def higher_card(card_one: str, card_two: str) -> str:
     if card_one_value < card_two_value:
         return card_two
     return card_one, card_two
+
+
+def value_of_card(card_one: str, card_two: str) -> int:
+    """
+    Returns the value the user must assign to the the ace so as not to 
+    go over 21
+    """
