@@ -48,3 +48,7 @@ def test_is_blackjack_A_K():
 
 def test_is_black_jack_10_9():
     assert is_blackjack('10', '9') == False
+
+
+def test_can_split_pairs_Q_K():
+    assert can_split_pairs('Q', 'K') == True
