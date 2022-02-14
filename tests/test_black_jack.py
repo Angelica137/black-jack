@@ -21,5 +21,9 @@ def test_vlue_of_card_returns_Q():
     assert value_of_card('Q') == 10
 
 
-def test_higher_card_returns_K_10():
+def test_higher_card_K_10():
     assert higher_card('K', '10') == ('K', '10')
+
+
+def test_higher_card_4_6():
+    assert higher_card('4', '6') == '6'
