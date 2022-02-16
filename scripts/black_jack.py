@@ -62,6 +62,3 @@ def can_double_down(card_one: str, card_two: str) -> bool:
     if hand_value == 9 or hand_value == 10 or hand_value == 11:
         return True
     return False
-
-
-print(value_of_ace('2', 'A'))
