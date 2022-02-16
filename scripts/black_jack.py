@@ -30,9 +30,7 @@ def value_of_ace(card_one: str, card_two: str) -> int:
     Returns the value the user must assign to the the ace so as not to 
     go over 21
     """
-    card_one = value_of_card(card_one)
-    card_two = value_of_card(card_two)
-    if (card_one + card_two + 11) > 21:
+    if (value_of_card(card_one) + value_of_card(card_two) + 11) > 21:
         return 1
     return 11
 
