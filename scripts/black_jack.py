@@ -28,9 +28,7 @@ def value_of_ace(card_one: str, card_two: str) -> int:
     Returns the value the user must assign to the the ace so as not to 
     go over 21
     """
-    if (value_of_card(card_one) + value_of_card(card_two) + 11) > 21:
-        return 1
-    return 11
+    return 1 if (value_of_card(card_one) + value_of_card(card_two) + 11) > 21 else 11
 
 
 def is_blackjack(card_one: str, card_two: str) -> bool:
