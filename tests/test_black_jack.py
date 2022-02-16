@@ -60,3 +60,7 @@ def test_can_split_pairs_10_A():
 
 def test_can_double_down_A_9():
     assert can_double_down('A', '9') == True
+
+
+def test_can_double_down_10_2():
+    assert can_double_down('10', '2') == False

@@ -67,3 +67,4 @@ def can_double_down(card_one: str, card_two: str) -> bool:
     hand_value = value_of_card(card_one) + value_of_card(card_two)
     if hand_value == 9 or hand_value == 10 or hand_value == 11:
         return True
+    return False
