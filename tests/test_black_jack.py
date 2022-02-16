@@ -56,3 +56,7 @@ def test_can_split_pairs_Q_K():
 
 def test_can_split_pairs_10_A():
     assert can_split_pairs('10', 'A') == False
+
+
+def test_can_double_down_A_9():
+    assert can_double_down('A', '9') == True
