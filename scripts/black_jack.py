@@ -16,11 +16,9 @@ def higher_card(card_one: str, card_two: str) -> str:
     Returns the highest value card, if both are the same
     value, both are returned
     """
-    card_one_value = value_of_card(card_one)
-    card_two_value = value_of_card(card_two)
-    if card_one_value > card_two_value:
+    if value_of_card(card_one) > value_of_card(card_two):
         return card_one
-    if card_one_value < card_two_value:
+    if value_of_card(card_one) < value_of_card(card_two):
         return card_two
     return card_one, card_two
 
