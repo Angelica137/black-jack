@@ -48,9 +48,7 @@ def can_split_pairs(card_one: str, card_two: str) -> bool:
     Returns True if the player is able to split the hand into two
     when they draw two cards of equal value
     """
-    if value_of_card(card_one) == value_of_card(card_two):
-        return True
-    return False
+    return True if value_of_card(card_one) == value_of_card(card_two) else False
 
 
 def can_double_down(card_one: str, card_two: str) -> bool:
