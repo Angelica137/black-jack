@@ -64,3 +64,7 @@ def test_can_double_down_A_9():
 
 def test_can_double_down_10_2():
     assert can_double_down('10', '2') == False
+
+
+def test_value_of_ace_2_A():
+    assert value_of_ace('2', 'A') == 1
