@@ -6,9 +6,8 @@ def value_of_card(card: str) -> int:
     """
     if card in 'JQK':
         return 10
-    if card == 'A':
-        return 1
-    return int(card)
+    else:
+        return 1 if card == 'A' else int(card)
 
 
 def higher_card(card_one: str, card_two: str) -> str:
